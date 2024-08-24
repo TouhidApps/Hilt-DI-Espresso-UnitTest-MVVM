@@ -1,7 +1,7 @@
-# Hilt DI Espresso UnitTest MVVM
-A project with Hilt dependency injection and Espresso unit test with MVVM pattern
+# Hilt DI, Espresso UnitTest, ROOM DB, MVVM
+A project with Room Db, Hilt dependency injection and Espresso unit test with MVVM pattern
 
-A Crypto Currency List app with DI, Unit test and MVVM pattern
+A Crypto Currency List app with DI, Unit test, ROOM DB and MVVM pattern
 
 ### How to use:
 
