@@ -1,10 +1,11 @@
 # Hilt DI, Espresso UnitTest, ROOM DB, MVVM
 Project with Room Db, Hilt dependency injection and Espresso unit test with MVVM pattern
 
+## Projects are:
 
-Project with xml based UI: Currency-List-xml
+* xml based UI: **Currency-List-xml**
 
-Project with Compose based UI: Currency-List-Compose
+* Compose based UI: **Currency-List-Compose**
 
 
 A Crypto Currency List app with DI, Unit test, ROOM DB and MVVM pattern
@@ -24,7 +25,7 @@ Download Link: https://developer.android.com/studio/preview
 
 Screenshot:
 
-![Unit test screenshot](https://raw.githubusercontent.com/TouhidApps/Hilt-DI-Espresso-UnitTest-MVVM/main/Currency-list/img/unittest.png)
+![Unit test screenshot](https://raw.githubusercontent.com/TouhidApps/Hilt-DI-Espresso-UnitTest-MVVM/main/Currency-List-xml/img/unittest.png)
 
 
 
