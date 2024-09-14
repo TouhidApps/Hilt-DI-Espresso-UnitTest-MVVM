@@ -1,11 +1,11 @@
 # Hilt DI, Espresso UnitTest, ROOM DB, MVVM
 Project with Room Db, Hilt dependency injection and Espresso unit test with MVVM pattern
 
-## Projects are:
-
-* xml based UI: **Currency-List-xml**
+## Projects are (Compose & xml):
 
 * Compose based UI: **Currency-List-Compose**
+
+* xml based UI: **Currency-List-xml**
 
 
 A Crypto Currency List app with DI, Unit test, ROOM DB and MVVM pattern
