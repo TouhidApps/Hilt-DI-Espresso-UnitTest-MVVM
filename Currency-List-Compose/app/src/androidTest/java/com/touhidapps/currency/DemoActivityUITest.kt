@@ -20,14 +20,17 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import kotlinx.coroutines.test.runTest
 import org.hamcrest.Matchers.*
+import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.junit.runners.MethodSorters
 import java.util.regex.Pattern.matches
 
 @RunWith(AndroidJUnit4::class)
 @ExperimentalCoroutinesApi
 @ExperimentalMaterial3Api
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @HiltAndroidTest
 class DemoActivityUITest {
 
@@ -44,7 +47,7 @@ class DemoActivityUITest {
 
 
     @Test
-    fun availableAllButtons() = runTest {
+    fun test1_availableAllButtons() = runTest {
 
         val btnTags = listOf<String>(
             "btnClearAll",
@@ -61,7 +64,7 @@ class DemoActivityUITest {
     }
 
     @Test
-    fun clearAllDataWithAlert() = runTest {
+    fun test2_clearAllDataWithAlert() = runTest {
 
         composeTestRule.onNodeWithTag("btnInsert").performClick()
         composeTestRule.onNodeWithTag("btnClearAll").performClick()
@@ -74,7 +77,7 @@ class DemoActivityUITest {
     }
 
     @Test
-    fun test_CryptoList_IsItCryptoList() = runTest {
+    fun test3_CryptoList_IsItCryptoList() = runTest {
 
         val expectedText = "Bitcoin"
         val unExpectedText = "Singapore Dollar"
@@ -88,7 +91,7 @@ class DemoActivityUITest {
     }
 
     @Test
-    fun test_FiatList_IsItFiatList() = runTest {
+    fun test4_FiatList_IsItFiatList() = runTest {
 
         val expectedText = "Singapore Dollar"
         val unExpectedText = "Bitcoin"
@@ -102,7 +105,7 @@ class DemoActivityUITest {
     }
 
     @Test
-    fun test_search_result() = runTest {
+    fun test5_search_result() = runTest {
 
         val searchText = "Ethere"
         val expectedText1 = "Ethereum"

@@ -25,12 +25,15 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
+import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @ExperimentalMaterial3Api
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @HiltAndroidTest
 class CurrencyViewModelTest {
 
@@ -57,7 +60,7 @@ class CurrencyViewModelTest {
     }
 
     @Test
-    fun insertDataToDb() = runTest {
+    fun test1_insertDataToDb() = runTest {
 
         // Arrange
         val expectedData = "Data insert success."
@@ -84,7 +87,7 @@ class CurrencyViewModelTest {
     } // insertDataToDb
 
     @Test
-    fun deleteDataFromDb() = runTest {
+    fun test2_deleteDataFromDb() = runTest {
 
         // Arrange
         val expectedData1 = "Data insert success."
@@ -119,7 +122,7 @@ class CurrencyViewModelTest {
     } // deleteDataFromDb
 
     @Test
-    fun getAllDataFromDb() = runTest {
+    fun test3_getAllDataFromDb() = runTest {
 
         // Arrange
         val minItemCount = 10
